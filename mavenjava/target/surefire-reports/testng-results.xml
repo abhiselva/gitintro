@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-31T06:48:08 IST" name="Suite" finished-at="2022-03-31T06:48:08 IST" duration-ms="30">
+    <groups>
+    </groups>
+    <test started-at="2022-03-31T06:48:08 IST" name="Test" finished-at="2022-03-31T06:48:08 IST" duration-ms="30">
+      <class name="samplemavenproject.mavenjava.AppiunTest">
+        <test-method signature="appautomation()[pri:0, instance:samplemavenproject.mavenjava.AppiunTest@3f6b0be5]" started-at="2022-03-31T06:48:08 IST" name="appautomation" finished-at="2022-03-31T06:48:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appautomation -->
+        <test-method signature="appelementUI()[pri:0, instance:samplemavenproject.mavenjava.AppiunTest@3f6b0be5]" started-at="2022-03-31T06:48:08 IST" name="appelementUI" finished-at="2022-03-31T06:48:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appelementUI -->
+      </class> <!-- samplemavenproject.mavenjava.AppiunTest -->
+      <class name="samplemavenproject.mavenjava.SeleniumTest">
+        <test-method signature="browserautomation()[pri:0, instance:samplemavenproject.mavenjava.SeleniumTest@4d0f2471]" started-at="2022-03-31T06:48:08 IST" name="browserautomation" finished-at="2022-03-31T06:48:08 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserautomation -->
+        <test-method signature="elementUI()[pri:0, instance:samplemavenproject.mavenjava.SeleniumTest@4d0f2471]" started-at="2022-03-31T06:48:08 IST" name="elementUI" finished-at="2022-03-31T06:48:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elementUI -->
+      </class> <!-- samplemavenproject.mavenjava.SeleniumTest -->
+      <class name="samplemavenproject.mavenjava.RestAPITest">
+        <test-method signature="apielementUI()[pri:0, instance:samplemavenproject.mavenjava.RestAPITest@611889f4]" started-at="2022-03-31T06:48:08 IST" name="apielementUI" finished-at="2022-03-31T06:48:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apielementUI -->
+        <test-method signature="restapiautomation()[pri:0, instance:samplemavenproject.mavenjava.RestAPITest@611889f4]" started-at="2022-03-31T06:48:08 IST" name="restapiautomation" finished-at="2022-03-31T06:48:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restapiautomation -->
+      </class> <!-- samplemavenproject.mavenjava.RestAPITest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
