@@ -1,0 +1,16 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class LocatorsDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.edge.driver","C:\\Users\\sabhi\\OneDrive\\Documents\\BrowserDrivers\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		
+		driver.get("https://rahulshettyacademy.com");
+		driver.findElement(By.id("inputUsername")).sendKeys("abhi");
+	}
+
+}

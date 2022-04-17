@@ -1,0 +1,4 @@
+20:43:06.683 [main] ERROR alpha.Demo1 - I am in error
+20:43:06.685 [main] FATAL alpha.Demo1 - I am in fatal
+20:43:43.787 [main] ERROR alpha.Demo1 - I am in error
+20:43:43.789 [main] FATAL alpha.Demo1 - I am in fatal

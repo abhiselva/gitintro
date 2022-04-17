@@ -1,0 +1,27 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Misc {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.edge.driver",
+				"C:\\Users\\sabhi\\OneDrive\\Documents\\BrowserDrivers\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.get("https://www.youtube.com/");
+		Thread.sleep(5000);
+		Actions a = new Actions(driver);
+		WebElement moveacct = driver.findElement(By.name("search_query"));
+		//a.moveToElement(moveacct).build().perform();
+		a.moveToElement(moveacct).click().sendKeys("arabic kuthu").perform();
+		
+		
+	}
+
+}

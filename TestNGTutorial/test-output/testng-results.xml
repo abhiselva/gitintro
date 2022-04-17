@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-29T10:35:50 IST" name="Suite" finished-at="2022-03-29T10:35:50 IST" duration-ms="53">
+    <groups>
+      <group name="smoke">
+        <method signature="Demo1.demo()[pri:0, instance:test.Demo1@6d4e5011]" name="demo" class="test.Demo1"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-03-29T10:35:50 IST" name="Test" finished-at="2022-03-29T10:35:50 IST" duration-ms="53">
+      <class name="test.CarLoan">
+        <test-method is-config="true" signature="beforetestcarloan(java.lang.String)[pri:0, instance:test.CarLoan@4bb33f74]" started-at="2022-03-29T10:35:50 IST" name="beforetestcarloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.amazon.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetestcarloan -->
+        <test-method signature="apicarloan()[pri:0, instance:test.CarLoan@4bb33f74]" started-at="2022-03-29T10:35:50 IST" name="apicarloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apicarloan -->
+        <test-method signature="mobilecarloan()[pri:0, instance:test.CarLoan@4bb33f74]" started-at="2022-03-29T10:35:50 IST" name="mobilecarloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilecarloan -->
+        <test-method signature="webcarloan()[pri:0, instance:test.CarLoan@4bb33f74]" started-at="2022-03-29T10:35:50 IST" name="webcarloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at test.CarLoan.webcarloan(CarLoan.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webcarloan -->
+        <test-method is-config="true" signature="aftertestcarloan()[pri:0, instance:test.CarLoan@4bb33f74]" started-at="2022-03-29T10:35:50 IST" name="aftertestcarloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertestcarloan -->
+      </class> <!-- test.CarLoan -->
+      <class name="test.HomeLoan">
+        <test-method signature="apihomeloan()[pri:0, instance:test.HomeLoan@67c33749]" started-at="2022-03-29T10:35:50 IST" name="apihomeloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apihomeloan -->
+        <test-method is-config="true" signature="beforeclashomeloan()[pri:0, instance:test.HomeLoan@67c33749]" started-at="2022-03-29T10:35:50 IST" name="beforeclashomeloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclashomeloan -->
+        <test-method signature="mobilehomeloan()[pri:0, instance:test.HomeLoan@67c33749]" started-at="2022-03-29T10:35:50 IST" name="mobilehomeloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilehomeloan -->
+        <test-method signature="webhomeloan()[pri:0, instance:test.HomeLoan@67c33749]" started-at="2022-03-29T10:35:50 IST" name="webhomeloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webhomeloan -->
+        <test-method is-config="true" signature="afterclasshomeloan()[pri:0, instance:test.HomeLoan@67c33749]" started-at="2022-03-29T10:35:50 IST" name="afterclasshomeloan" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclasshomeloan -->
+      </class> <!-- test.HomeLoan -->
+      <class name="test.Demo2">
+        <test-method signature="demo(java.lang.String,java.lang.String)[pri:0, instance:test.Demo2@57d7f8ca]" started-at="2022-03-29T10:35:50 IST" name="demo" data-provider="getData" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pswd1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method signature="demo(java.lang.String,java.lang.String)[pri:0, instance:test.Demo2@57d7f8ca]" started-at="2022-03-29T10:35:50 IST" name="demo" data-provider="getData" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pswd2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method is-config="true" signature="aftersuitedemo()[pri:0, instance:test.Demo2@57d7f8ca]" started-at="2022-03-29T10:35:50 IST" name="aftersuitedemo" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuitedemo -->
+      </class> <!-- test.Demo2 -->
+      <class name="test.Demo1">
+        <test-method is-config="true" signature="beforesuitedemo()[pri:0, instance:test.Demo1@6d4e5011]" started-at="2022-03-29T10:35:50 IST" name="beforesuitedemo" finished-at="2022-03-29T10:35:50 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuitedemo -->
+        <test-method is-config="true" signature="beforemethoddemo()[pri:0, instance:test.Demo1@6d4e5011]" started-at="2022-03-29T10:35:50 IST" name="beforemethoddemo" finished-at="2022-03-29T10:35:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethoddemo -->
+        <test-method signature="demo()[pri:0, instance:test.Demo1@6d4e5011]" started-at="2022-03-29T10:35:50 IST" name="demo" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method is-config="true" signature="aftermethoddemo()[pri:0, instance:test.Demo1@6d4e5011]" started-at="2022-03-29T10:35:50 IST" name="aftermethoddemo" finished-at="2022-03-29T10:35:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethoddemo -->
+        <test-method is-config="true" signature="beforemethoddemo()[pri:0, instance:test.Demo1@6d4e5011]" started-at="2022-03-29T10:35:50 IST" name="beforemethoddemo" finished-at="2022-03-29T10:35:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethoddemo -->
+        <test-method signature="demo1()[pri:0, instance:test.Demo1@6d4e5011]" started-at="2022-03-29T10:35:50 IST" name="demo1" finished-at="2022-03-29T10:35:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo1 -->
+        <test-method is-config="true" signature="aftermethoddemo()[pri:0, instance:test.Demo1@6d4e5011]" started-at="2022-03-29T10:35:50 IST" name="aftermethoddemo" finished-at="2022-03-29T10:35:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethoddemo -->
+      </class> <!-- test.Demo1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

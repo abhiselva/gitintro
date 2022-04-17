@@ -1,0 +1,36 @@
+package Academy;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.LandingPage;
+import pageObjects.LoginPage;
+import resources.Base;
+
+
+public class ValidateBtnText extends Base{
+
+	@Test
+	public void baseTitleNavigation() throws IOException
+	{
+		driver = invokebrowsers();
+		driver.get(prop.getProperty("url"));
+		System.out.println(prop.getProperty("url"));
+		//driver.get("http://www.qaclickacademy.com");
+		LandingPage lp = new LandingPage(driver);
+		Assert.assertEquals(lp.getButtonText().getText(), "VIEW ALL COURSES");
+	
+		//Assert.assertTrue(lp.getNav().isDisplayed());
+	}
+	
+	@AfterTest
+	public void closeBrowser()
+	{
+		driver.close();
+	}
+}

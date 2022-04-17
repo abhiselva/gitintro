@@ -1,0 +1,41 @@
+package Academy;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.LandingPage;
+import pageObjects.LoginPage;
+import resources.Base;
+
+
+public class ValidateTitleNavigation extends Base{
+	
+	@BeforeTest
+	public void invokeBrowser() throws IOException
+	{
+		driver = invokebrowsers();
+		driver.get(prop.getProperty("url"));
+	}
+	
+	@Test
+	public void basePageNavigation() throws IOException, InterruptedException
+	{
+		
+		LandingPage lp = new LandingPage(driver);
+		lp.getnothanks().click();
+		Assert.assertEquals(lp.getTitle().getText(), "FEATURED COURSES");
+		Assert.assertTrue(lp.getNav().isDisplayed());
+	}
+	
+	@AfterTest
+	public void closeBrowser()
+	{
+		driver.close();
+	}
+}
+		
